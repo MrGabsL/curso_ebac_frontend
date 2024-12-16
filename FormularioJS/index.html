@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+
+    <!-- Referenciando o arquivo JavaScript externo -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <!-- 1. Criação do formulário HTML -->
+    <form id="formulario" onsubmit="return validarFormulario(event)">
+        <label for="campoA">Campo A:</label>
+        <input type="number" id="campoA" name="campoA" required>
+        <br><br>
+        
+        <label for="campoB">Campo B:</label>
+        <input type="number" id="campoB" name="campoB" required>
+        <br><br>
+
+        <!-- 2. Botão para submeter o formulário -->
+        <button type="submit">Submeter</button>
+    </form>
+
+    <!-- Mensagem de validação -->
+    <p id="mensagem"></p>
+
+</body>
+</html>
